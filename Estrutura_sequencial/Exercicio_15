@@ -7,17 +7,25 @@ hora_trabalhada = int(input("Digite quantas horas trabalhou: "))
 print("\n")
 
 salario_bruto = valor_hora * hora_trabalhada
-ir = (salario_bruto / 100) * 11
-inss = (salario_bruto / 100) * 8
-sindicato = (salario_bruto / 100) * 5
+if salario_bruto > 5000:
+    ir = (salario_bruto / 100) * 11
+    inss = (salario_bruto / 100) * 7.5
+    sindicato = salario_bruto / 30
+    
+else:
+     ir = 0
+     inss = (salario_bruto / 100) * 7.5
+     sindicato = salario_bruto / 30
+     
 salario_liquido = salario_bruto - ir - inss - sindicato
 
+
 print(f" + Salário Bruto : R$ {salario_bruto}")
-print("\n")
+#print("\n")
 print(f" - IR (11%) : R$ {ir}")
-print("\n")
-print(f"- INSS (8%) : R$ {inss}")
-print("\n")
-print(f"- Sindicato ( 5%) : R$ {sindicato}")
-print("\n")
+#print("\n")
+print(f"- INSS (7.5%) : R$ {inss}")
+#print("\n")
+print(f"- Sindicato (Equivale a um dia de trabalho do salario bruto) : R$ {sindicato}")
+#print("\n")
 print(f"= Salário Liquido : R$ {salario_liquido}")

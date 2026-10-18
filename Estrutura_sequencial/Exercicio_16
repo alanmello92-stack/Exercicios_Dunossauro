@@ -5,8 +5,8 @@ print("\n")
 quantidade_tinta = metros_quadrados * 3
 
 latas = quantidade_tinta / 18
-#comando de math.ceil para arredondar o valor para cima corrigindo
-o resultado decimal, já que não é possivel vender uma lata fracionada
+""" comando de math.ceil para arredondar o valor para cima corrigindo
+o resultado decimal, já que não é possivel vender uma lata fracionada """
 latas_corrigido = math.ceil(latas)
 
 valor = latas_corrigido * 80
