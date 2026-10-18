@@ -1,0 +1,8 @@
+peso_total = int(input("Digite (em quilos) o peso total do produto: "))
+print("\n")
+excesso = peso_total - 50
+
+multa = excesso * 4
+
+
+print(f"O excedente é {excesso} e o valor a ser pago é {multa}")
