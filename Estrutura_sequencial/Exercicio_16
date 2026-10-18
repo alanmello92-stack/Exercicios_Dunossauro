@@ -1,0 +1,14 @@
+import math
+
+metros_quadrados = int(input("informe o tamanho do local para pintura (M2)"))
+print("\n")
+quantidade_tinta = metros_quadrados * 3
+
+latas = quantidade_tinta / 18
+#comando de math.ceil para arredondar o valor para cima corrigindo
+o resultado decimal, já que não é possivel vender uma lata fracionada
+latas_corrigido = math.ceil(latas)
+
+valor = latas_corrigido * 80
+
+print(f"Você precisa de {latas_corrigido} lata(s) de tinta. O valor dessa compra é de R$ {valor}")
