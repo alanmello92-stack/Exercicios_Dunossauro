@@ -1,0 +1,10 @@
+tam_arquivo = float(input("Dgite o tamanho de arquivo em MB´s (Megabytes):  "))
+
+vel_download = float(input("Digite a velocidade da internet em Mb's (megabits): "))
+
+vel_convertida = vel_download / 8
+
+tempo_de_download = (tam_arquivo / vel_convertida) / 60
+
+
+print(f"O tempo para baixar o arquivo é de {tempo_de_download} minutos")
