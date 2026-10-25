@@ -1,0 +1,10 @@
+#Usei o .lower para que não tivesse erro ao digitar maiuscula ou minuscula
+#e o strip para evitar erro ao usar espaços
+identificação = input("Digite o sexo com 'F' ou 'M': ").lower().strip()
+
+if identificação == "f":
+    print("Feminino")
+elif identificação == "m":
+    print("Masculino")
+else: 
+    print("Sexo Inválido")
