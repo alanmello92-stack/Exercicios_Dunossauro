@@ -1,0 +1,14 @@
+# O .lower() é para transformar a letra em minuscula, assim no passo de verificação não provoca erro.
+# Ainda tenho que aprender a exibir de fato o que o usuário digitou, sem exibir a letra depois de passar pelo .lower()
+letra = input("Digite uma letra: ").lower()
+
+#Queria que ao digitar caracteres difirentes o código desse erro(Sem quebrar) Então fiz um if antes do if de verificação de vogal e consoante.
+#len() ->Conta os caracteres. != ->Significa diferente  or -> ou. not-> Inverte a função ou negativa. .isalpha() -> função para limitar a apenas letras.
+#Então: Se na variavel letras for diferente de 1 ou não tiver apenas letras é exibido o print de erro. 
+if len(letra) != 1 or not letra.isalpha():
+    print("Não é valido! Digite apenas UMA LETRA")
+else:
+    if letra in ('a','e','i','o','u'):
+        print(f"A letra {letra} é uma vogal.")
+    else:
+        print(f"A letra {letra} é uma consoante.")
